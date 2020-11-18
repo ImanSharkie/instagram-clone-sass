@@ -1,0 +1,261 @@
+$instagram-blue:#3897f0;
+$ig-lightgrey: rgb(244, 241, 241);
+$ig-white: #fafafa;
+$mygrey: rgb(123, 122, 122);
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+%sections-layout {
+    position: relative;
+    height: 100vh;
+    background-color: $ig-lightgrey;
+}
+
+%center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+//login section
+.login-section {
+    @extend %sections-layout;
+
+    .content-login {
+        display: flex;
+        background-color: $ig-white;
+        @extend %center;
+        width: 70%;
+
+        div {
+            width: 100%;
+        }
+
+        .image-wrapper {
+            img {
+                position: relative;
+                left: 110px;
+            }
+        }
+
+        .content-user {
+            .login-details-wrapper {
+                .login-wrapper {
+                    text-align: center;
+                    width: 80%;
+                    background-color: #fff;
+
+                    .ig-header,
+                    .input-1,
+                    .input-2 {
+                        width: 80%;
+                        margin-bottom: 5px;
+                        padding: 8px 12px;
+                        border: 1px solid $ig-lightgrey;
+                        border-radius: 5px;
+                        height: 50px;
+                    }
+
+                    .ig-header {
+                        margin-bottom: 40px;
+                        width: 70%;
+                        height: 15%;
+                        border: none;
+                    }
+
+                    .login-btn {
+                        margin-top: 20px;
+                        width: 80%;
+                        background-color: $instagram-blue;
+                        border: 1px solid $instagram-blue;
+                        padding: 5px 12px;
+                        color: $ig-white;
+                        font-weight: bold;
+                        cursor: pointer;
+                        border-radius: 3px;
+                    }
+                }
+
+                .or {
+                    padding: 20px;
+                }
+
+                .facebook-login {
+                    display: flex;
+                    padding: 10px;
+                    margin-top: 5px;
+
+                    .fb-logo {
+                        left: 15px;
+                        height: 18px;
+                        width: 18px;
+                    }
+
+                    p,
+                    .fb-logo {
+                        position: relative;
+                        right: 65px;
+                        bottom: 11px;
+                        color: rgb(78, 116, 242);
+                    }
+                }
+
+                .forgot-password {
+                    color: $instagram-blue;
+                }
+
+                .sign-up {
+                    border: 1px solid $ig-lightgrey;
+                    margin: 3px;
+                    margin-top: 20px;
+                    padding: 10px;
+                }
+
+                .get-app {
+                    margin: 3px;
+                    padding: 20px;
+                }
+            }
+        }
+    }
+}
+
+//footer
+
+.footer-wrapper {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    padding: 5px;
+    position: relative;
+    top: 95vh;
+
+    .footer-nav {
+        text-align: center;
+
+        li {
+            font-size: 15px;
+            height: 5vh;
+            display: inline-block;
+            margin-right: 10px;
+            color: rgba(var(--fe0, 0, 55, 107), 1);
+        }
+    }
+
+    .copyright {
+        p {
+            color: $mygrey;
+            position: relative;
+            left: 120px;
+        }
+    }
+}
+
+//home section
+
+.home-section {
+    @extend %sections-layout;
+
+    nav {
+        display: flex;
+        background-color: #fff;
+        height: 5vh;
+
+        .ig-logo {
+            width: 30%;
+
+            img {
+                position: relative;
+                left: 80%;
+                height: 100%;
+            }
+        }
+
+        .search-bar {
+            width: 40%;
+            text-align: center;
+
+            input {
+                position: relative;
+                margin: 0 auto;
+                width: 60%;
+                height: 20px;
+                top: 8px;
+            }
+        }
+
+        .nav-icons {
+            width: 30%;
+
+            img {
+                position: relative;
+                top: 4px;
+                height: 70%;
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+.post-wrapper {
+    width: 30%;
+    margin: 0 auto;
+    background-color: #fff;
+    position: relative;
+    top: 80px;
+    border: 1px solid lightgrey;
+
+    .user-post {
+        display: flex;
+        padding: 5px;
+
+        p {
+            margin-left: 6px;
+        }
+    }
+
+    .image-post {
+        height: 50%;
+        width: 100%;
+    }
+
+    .like-box {
+        margin-left: 10px;
+    }
+
+
+    .icons-post {
+        margin: 5px 2px 3px 10px;
+
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    .comments-wrapper {
+        margin-left: 20px;
+        padding: 10px;
+
+        .comments {
+            display: flex;
+
+            .comment {
+                color: $mygrey;
+            }
+        }
+    }
+
+    .post-date {
+        padding: 4px;
+        margin-left: 2px;
+        color: $mygrey;
+    }
+}

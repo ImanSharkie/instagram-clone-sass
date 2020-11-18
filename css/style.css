@@ -1,0 +1,202 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.home-section, .login-section {
+  position: relative;
+  height: 100vh;
+  background-color: #f4f1f1;
+}
+
+.login-section .content-login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login-section .content-login {
+  display: flex;
+  background-color: #fafafa;
+  width: 70%;
+}
+.login-section .content-login div {
+  width: 100%;
+}
+.login-section .content-login .image-wrapper img {
+  position: relative;
+  left: 110px;
+}
+.login-section .content-login .content-user .login-details-wrapper .login-wrapper {
+  text-align: center;
+  width: 80%;
+  background-color: #fff;
+}
+.login-section .content-login .content-user .login-details-wrapper .login-wrapper .ig-header,
+.login-section .content-login .content-user .login-details-wrapper .login-wrapper .input-1,
+.login-section .content-login .content-user .login-details-wrapper .login-wrapper .input-2 {
+  width: 80%;
+  margin-bottom: 5px;
+  padding: 8px 12px;
+  border: 1px solid #f4f1f1;
+  border-radius: 5px;
+  height: 50px;
+}
+.login-section .content-login .content-user .login-details-wrapper .login-wrapper .ig-header {
+  margin-bottom: 40px;
+  width: 70%;
+  height: 15%;
+  border: none;
+}
+.login-section .content-login .content-user .login-details-wrapper .login-wrapper .login-btn {
+  margin-top: 20px;
+  width: 80%;
+  background-color: #3897f0;
+  border: 1px solid #3897f0;
+  padding: 5px 12px;
+  color: #fafafa;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.login-section .content-login .content-user .login-details-wrapper .or {
+  padding: 20px;
+}
+.login-section .content-login .content-user .login-details-wrapper .facebook-login {
+  display: flex;
+  padding: 10px;
+  margin-top: 5px;
+}
+.login-section .content-login .content-user .login-details-wrapper .facebook-login .fb-logo {
+  left: 15px;
+  height: 18px;
+  width: 18px;
+}
+.login-section .content-login .content-user .login-details-wrapper .facebook-login p,
+.login-section .content-login .content-user .login-details-wrapper .facebook-login .fb-logo {
+  position: relative;
+  right: 65px;
+  bottom: 11px;
+  color: #4e74f2;
+}
+.login-section .content-login .content-user .login-details-wrapper .forgot-password {
+  color: #3897f0;
+}
+.login-section .content-login .content-user .login-details-wrapper .sign-up {
+  border: 1px solid #f4f1f1;
+  margin: 3px;
+  margin-top: 20px;
+  padding: 10px;
+}
+.login-section .content-login .content-user .login-details-wrapper .get-app {
+  margin: 3px;
+  padding: 20px;
+}
+
+.footer-wrapper {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  padding: 5px;
+  position: relative;
+  top: 95vh;
+}
+.footer-wrapper .footer-nav {
+  text-align: center;
+}
+.footer-wrapper .footer-nav li {
+  font-size: 15px;
+  height: 5vh;
+  display: inline-block;
+  margin-right: 10px;
+  color: rgba(var(--fe0, 0, 55, 107), 1);
+}
+.footer-wrapper .copyright p {
+  color: #7b7a7a;
+  position: relative;
+  left: 120px;
+}
+
+.home-section nav {
+  display: flex;
+  background-color: #fff;
+  height: 5vh;
+}
+.home-section nav .ig-logo {
+  width: 30%;
+}
+.home-section nav .ig-logo img {
+  position: relative;
+  left: 80%;
+  height: 100%;
+}
+.home-section nav .search-bar {
+  width: 40%;
+  text-align: center;
+}
+.home-section nav .search-bar input {
+  position: relative;
+  margin: 0 auto;
+  width: 60%;
+  height: 20px;
+  top: 8px;
+}
+.home-section nav .nav-icons {
+  width: 30%;
+}
+.home-section nav .nav-icons img {
+  position: relative;
+  top: 4px;
+  height: 70%;
+  margin-left: 10px;
+}
+
+.post-wrapper {
+  width: 30%;
+  margin: 0 auto;
+  background-color: #fff;
+  position: relative;
+  top: 80px;
+  border: 1px solid lightgrey;
+}
+.post-wrapper .user-post {
+  display: flex;
+  padding: 5px;
+}
+.post-wrapper .user-post p {
+  margin-left: 6px;
+}
+.post-wrapper .image-post {
+  height: 50%;
+  width: 100%;
+}
+.post-wrapper .like-box {
+  margin-left: 10px;
+}
+.post-wrapper .icons-post {
+  margin: 5px 2px 3px 10px;
+}
+.post-wrapper .icons-post img {
+  width: 20px;
+  height: 20px;
+}
+.post-wrapper .comments-wrapper {
+  margin-left: 20px;
+  padding: 10px;
+}
+.post-wrapper .comments-wrapper .comments {
+  display: flex;
+}
+.post-wrapper .comments-wrapper .comments .comment {
+  color: #7b7a7a;
+}
+.post-wrapper .post-date {
+  padding: 4px;
+  margin-left: 2px;
+  color: #7b7a7a;
+}
+
+/*# sourceMappingURL=style.css.map */
